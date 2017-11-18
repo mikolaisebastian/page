@@ -19,7 +19,14 @@ after_install:
 
 # Build and Deploy
 script:
-  - mkdocs gh-deploy -v
+  - mkdocs build --verbose --clean --strict
+
+deploy:
+ provider: pages
+ skip_cleanup: true
+ local_dir: site
+ on:
+   branch: master
 
 # Only build on master; changes to gh-pages are irrelevant
 branches:
