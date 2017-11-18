@@ -1,0 +1,102 @@
+# Project information
+site_name: 'Easy-Wi Webinterface'
+site_description: 'A game and voice server and webspace webinterface'
+site_author: 'Ulrich Block'
+site_url: 'https://easy-wi.com'
+
+# Address for local developement
+dev_addr: '0.0.0.0:8080'
+
+# Repository
+repo_name: 'easy-wi/developer'
+repo_url: 'https://github.com/easy-wi/developer'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 Ulrich Block'
+
+# Configuration
+theme:
+  favicon: 'assets/img/favicon.ico'
+  logo: 'img/logo.png'
+  feature:
+    tabs: false
+  name: 'material'
+  language: 'en, de'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Location of the custom files
+theme_dir: 'theme'
+
+# Customization
+extra:
+  search:
+    language: 'en, de'
+  social:
+    - type: 'github'
+      link: 'https://github.com/easy-wi/'
+    - type: 'twitter'
+      link: 'https://twitter.com/EasyWI/'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/easywi/'
+    - type: 'question-circle'
+      link: 'https://gitter.im/easy-wi/'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+# Page tree
+pages:
+  - Easy-Wi: index.md
+#  - English:
+#      - Requirements: 'en/functions.md'
+#      - Installation:
+#        - Web Interface: 'en/installation-web-interface.md'
+#        - Game Root Server: 'en/installation-game-root-server.md'
+#        - Voice Root Server: 'en/installation-voice-root-server.md'
+#        - Image Server: 'en/installation-image-server.md'
+  - Deutsch:
+#      - Anforderungen: 'de/anforderungen.md'
+      - Installation:
+        - Web Interface: 'de/installation-web-interface.md'
+#        - Game Root Server: 'de/installation-game-root-server.md'
+#        - Voice Root Server: 'de/installation-voice-root-server.md'
+        - Image Server: 'de/installation-image-server.md'
+#      - Admin:
+#        - Home:
+#        - Settings:
+#        - Jobs/API:
+#        - Feeds:
+#        - CMS:
+#        - Webspace:
+#        - MySQL:
+#        - User:
+#        - Game Server:
+#          - Templates: 'de/game-server-templates.md'
+#        - App/Game Master:
+#          - Master Server: 'de/admin-app-game-master.md'
+#          - Master Apps: 'de/admin-app-game-master-apps.md'
+#          - Master Apps Update: 'de/admin-app-game-master-apps-update.md'
+#        - Voice Server:
+#        - Test/Lend Server:
+#        - Support:
+      - Game Server:
+        - Allgemeines: 'de/game-server-allgemeines.md'
+#    - User:
+#      - Game Server:
+#        - Übersicht: 'de/.md'
+#        - Addons: 'de/.md'
+#        - Fast Download: 'de/.md'
+#        - Umzugsservice: 'de/.md'
+#        - Datei Templates: 'de/.md'
+#    - API:
+  - License: license.md
